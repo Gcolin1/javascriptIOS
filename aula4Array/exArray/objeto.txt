@@ -1,1 +1,2 @@
-objeto em javascript é uma objeto que contem propriedades e tipos 
+objeto em javascript é uma objeto que contem propriedades e tipos, que guardam valores de um determinado objeto 
+ex carro é um objeto que contem propriedades como cor, peso, tamanho.
