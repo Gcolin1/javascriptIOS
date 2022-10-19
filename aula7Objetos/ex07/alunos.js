@@ -61,9 +61,11 @@ var alunos = {
     }
 }
 
-for(let alunos = 0; i < alunos.length; alunos++){
+for(let i = 0; i < alunos.length; alunos++){
     console.log(alunos)
 }
+
+media = alunos.aluno1.notas.fisica + alunos.aluno1.notas.matematica + alunos.aluno1.notas.quimica + alunos.aluno1.notas.portugues / 4 
 
 if(media >= 7){
     return "Aluno Aprovado"
