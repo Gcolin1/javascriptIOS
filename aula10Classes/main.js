@@ -6,8 +6,17 @@ class carro {
         this.porta = porta;
         this.janelas = janelas
     }
+
+    //metodo que retorna a idade do meu carro
+    idadeCarro = (anoAtual) =>{
+       return anoAtual - this.ano
+    }
+
 }
 
-const fiat = new carro("touro", 2020, 4, 4, 6)
+dataHoje = new Date().getFullYear()
 
-console.log(`o carro ${fiat.nome} ano ${fiat.ano}, tem ${fiat.rodas} rodas, ${fiat.porta} portas e ${fiat.janelas} janelas`)
+const fiat = new carro("touro", 2020, 4, 4, 6)
+console.log(fiat)
+console.log(fiat.nome)
+console.log(fiat.idadeCarro(dataHoje))
