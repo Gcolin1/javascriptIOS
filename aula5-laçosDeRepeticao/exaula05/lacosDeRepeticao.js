@@ -1,23 +1,11 @@
-let num = 0
+var a = 1
+var b = 5
+var c = 0
 
-while(num < 50){
-    num++
-    console.log(num)
+while(a < b){
+    c = c + (a * b)
+    a = a + 1
 }
 
-//contagem regressiva de 10 a 0
+console.log(a, c)
 
-let regressiva = 10
-
-do{
-    regressiva--
-    console.log(regressiva)
-}while(regressiva > 0)
-
-//Numeros pares de 1 a 0
-
-for(let contagem = 1; contagem <= 100; contagem++){
-    if(contagem % 2 == 0){
-        console.log(`numero par = ${contagem}`)
-    }
-}
