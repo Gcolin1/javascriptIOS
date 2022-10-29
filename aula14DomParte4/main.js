@@ -39,3 +39,14 @@ function onSubmit(e) {
         nameInput.focus(); //Coloca o foco no elmento
     }
 }
+
+// Validando e-mail
+emailInput.addEventListener('change', (e) => {
+    let padrao = new RegExp(/.*@.*\..*/i);
+    if (!padrao.test(emailInput.value)) {
+        // alert('Por favor, insira um e-mail válido.');
+        msg_email.classList.add('error');
+        msg_email.innerHTML = 'Por favor, insira um e-mail válido.';
+        setTimeout(() => msg.remove(), 3000);
+    }
+});
